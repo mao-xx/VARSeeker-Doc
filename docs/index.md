@@ -6,6 +6,7 @@
 
 **VARSeeker** is an open-source, dynamic, and disease-aware platform for genetic variant interpretation and management. Beyond providing rapid ACMG automated classification, it supports fine-grained evidence curation, longitudinal case tracking, and community knowledge sharing, serving diverse users from researchers to clinicians.
 
+
 ## 2. Quick Start
 
 Get your first variant interpretation in 3 simple steps!
@@ -23,9 +24,11 @@ On the homepage, enter your variant in the input box. VARSeeker supports three i
 ### Step 2: Configure Options (Optional)
 
 - **Genome Build**: Select `hg19` or `hg38` (default: hg38)
+
 - **Phenotype**: Enter patient phenotypes for disease-aware interpretation
-  - Multiple phenotypes can be entered
-  - If left empty, VARSeeker automatically matches the most relevant disease
+
+    - Multiple phenotypes can be entered
+    - If left empty, VARSeeker automatically matches the most relevant disease
 
 ### Step 3: Click "Interpret"
 
@@ -33,7 +36,9 @@ Click the **"Interpret"** button to start the analysis.
 
 ![](asserts/Document_image_1.png)
 
-> 💡 **Pro Tip**: Adding phenotype information significantly improves interpretation accuracy by enabling disease-specific scoring rules.
+
+!!! tip "Pro Tip"
+    Adding phenotype information significantly improves interpretation accuracy by enabling disease-specific scoring rules.
 
 ---
 
@@ -59,33 +64,51 @@ One of VARSeeker's unique features is its **disease-aware interpretation**:
 ## 4. Batch Variant Interpretation
 
 For large-scale variant screening in clinical or research settings, VARSeeker provides three batch interpretation methods.
+
 ### 4.1 Multiple Variants Input
 
 ![](asserts/Document_image_2.png)
 
 1. Click the **"Multiple"** icon below the homepage input area
+
 2. Fill in:
+
    - **Task Description**: A brief description of your analysis
    - **Case Information**: Optional case details
    - **Phenotypes**: Enter HPO terms or disease names for phenotype-aware interpretation
    - **Variants**: Enter multiple variants (one per line)
+
 3. Click **"OK"** to submit
 
-![](asserts/Document_image_3.png)
+<!-- ![](asserts/Document_image_3.png) -->
+
+<div align=center>
+   <img src="asserts/Document_image_3.png" width=75% />
+</div>
+<br/>
 
 ### 4.2 VCF File Upload
 
 ![](asserts/Document_image_4.png)
 
 1. Click the **"VCF"** icon below the homepage
+
 2. Fill in:
+
    - **Task Description**: A brief description of your analysis
    - **Case Information**: Optional case details
    - **Phenotypes**: Enter HPO terms or disease names for phenotype-aware interpretation
+
 3. Upload your VCF file and PED format file (*optional*)
+
 4. Click **"OK"** to submit
 
-![](asserts/Document_image_5.png)
+<!-- ![](asserts/Document_image_5.png) -->
+
+<div align=center>
+   <img src="asserts/Document_image_5.png" width=75% />
+</div>
+<br/>
 
 ### 4.3 FastQ File Upload
 
@@ -94,29 +117,51 @@ For end-to-end analysis from raw sequencing data:
 ![](asserts/Document_image_6.png)
 
 1. Click the **"FastQ"** icon below the homepage
+
 2. Fill in:
+
    - **Task Description**: A brief description of your analysis
    - **Case Information**: Optional case details
    - **Phenotypes**: Enter HPO terms or disease names for phenotype-aware interpretation
+
 3. Upload your FastQ files
+
 4. Click **"OK"** to submit
 
-![](asserts/Document_image_7.png)
+<!-- ![](asserts/Document_image_7.png) -->
 
-> **⚡ Note**: FastQ interpretation includes variant calling pipeline and takes longer.
+<div align=center>
+   <img src="asserts/Document_image_7.png" width=75% />
+</div>
+<br/>
+<!-- > **⚡ Note**: FastQ interpretation includes variant calling pipeline and takes longer. -->
+
+
+!!! danger "Note"
+    FastQ interpretation includes variant calling pipeline and takes longer.
 
 ### 4.4 Accessing Batch Results
 
 #### 4.4.1 Non-logged Users
 
-![](asserts/Document_image_8.png)
+<!-- ![](asserts/Document_image_8.png) -->
+
+<div align=center>
+   <img src="asserts/Document_image_8.png" width=75% />
+</div>
+<br/>
 
 After submitting batch tasks, system generates a unique **Token**:
+
 - Save the Token link
 - Access task results via the link
 - Protects your data privacy
 
-> **🔒 Privacy Protection**: Token link is known only to you—keep it secure.
+<!-- > **🔒 Privacy Protection**: Token link is known only to you—keep it secure. -->
+
+!!! info "Privacy Protection 🔒"
+
+    Token link is known only to you—keep it secure.
 
 #### 4.4.2 Logged Users
 
@@ -139,22 +184,28 @@ The **Overview Panel** is positioned at the top of the page, providing a quick s
 
 The **Overview Panel** consists of three components:
 
-#### Region 1️⃣: Pathogenicity Classification
+<!-- #### Region 1️⃣: Pathogenicity Classification -->
+
+**1️⃣ Pathogenicity Classification**
 
 ![](asserts/Document_image_12.png)
 
 Shows final classification (ACMG/AMP guideline-compliant):
+
 - **Pathogenic** (P)
 - **Likely Pathogenic** (LP)
 - **Uncertain Significance** (VUS)
 - **Likely Benign** (LB)
 - **Benign** (B)
 
-#### Region 2️⃣: Basic Information
+<!-- #### Region 2️⃣: Basic Information -->
+
+**2️⃣ Basic Information**
 
 ![](asserts/Document_image_13.png)
 
 Contains key variant metadata:
+
 - **Variant identifier**
 - **Gene**
 - **Associated disease**
@@ -162,25 +213,36 @@ Contains key variant metadata:
 - **Mode of Inheritance** (MOI)
 - **Linked Case ID** (if set)
 
-> **💡Quick Navigation Tip**: Click any blue hyperlinked element to auto-scroll to corresponding detailed information.
+<!-- > **💡Quick Navigation Tip**: Click any blue hyperlinked element to auto-scroll to corresponding detailed information. -->
+
+!!! tip "Quick Navigation Tip"
+    
+    Click any blue hyperlinked element to auto-scroll to corresponding detailed information.
 
 
-#### Region 3️⃣: ACMG Criteria Activation Status
+<!-- #### Region 3️⃣: ACMG Criteria Activation Status -->
+
+**3️⃣ ACMG Criteria Activation Status**
 
 ![](asserts/Document_image_14.png)
 
 Divided into two sub-panels:
 
 **A. Pathogenic Criteria**
+
 - Activated criteria displayed in color (PVS1/PS1/PM1/PP1)
 - Gray indicates not activated
 
 **B. Benign Criteria**
+
 - Activated criteria displayed in color (BA/BS/BP)
 - Gray indicates not activated
 
->**💡Tip**: Click any criterion name to auto-scroll to its detailed evidence card.
+<!-- >**💡Tip**: Click any criterion name to auto-scroll to its detailed evidence card. -->
 
+!!! tip 
+
+    Click any criterion name to auto-scroll to its detailed evidence card.
 
 ### 5.2 Details Explorer (Blue Border Area)
 
@@ -188,7 +250,7 @@ The **Details Explorer** is positioned below the Overview Panel, containing deta
 
 ![](asserts/Document_image_15.png)
 
-> **💡 Navigation Tip - Important!**
+<!-- > **💡 Navigation Tip - Important!**
 > 
 > While you *can* scroll through the Evidence Explorer manually, **we recommend using the Overview Panel as your navigation hub**:
 > 
@@ -198,7 +260,20 @@ The **Details Explorer** is positioned below the Overview Panel, containing deta
 > - **Click "Linked Case"** → Auto-scrolls to Case detail card
 > - **Click any criterion** (e.g., PM2, PP3) → Auto-scrolls to that criterion's detail card
 > 
-> This design allows you to quickly navigate to specific information without losing context in the Overview Panel.
+> This design allows you to quickly navigate to specific information without losing context in the Overview Panel. -->
+
+!!! tip "Navigation Tip"
+
+    While you *can* scroll through the Evidence Explorer manually, **we recommend using the Overview Panel as your navigation hub**:
+
+    - **Click "Gene"** in Basic Information → Auto-scrolls to Gene detail card
+    - **Click "Variant Name"** → Auto-scrolls to Variant detail card
+    - **Click "Associated Disease"** → Auto-scrolls to Disease detail card
+    - **Click "Linked Case"** → Auto-scrolls to Case detail card
+    - **Click any criterion** (e.g., PM2, PP3) → Auto-scrolls to that criterion's detail card
+
+    This design allows you to quickly navigate to specific information without losing context in the Overview Panel.
+
 
 ![](asserts/Document_image_16.png)
 
@@ -209,10 +284,12 @@ Each criterion in the Evidence Explorer follows a consistent card structure:
 ![](asserts/Document_image_17.png)
 
 #### Card Head
+
 - **Criterion Name & Strength**: e.g., "PM2 - Supporting"
 - **Action Buttons**: Edit, Reset
 
 #### Card Body
+
 Contains three sections providing progressive detail:
 
 | Section        | Purpose                                                |
@@ -225,13 +302,18 @@ Contains three sections providing progressive detail:
 
 ## 6. Fine-Grained Evidence Curation
 
-### ⭐ Key Innovation
+<!-- **⭐ Key Feature**
 
-Unlike other tools that provide static, one-time classifications, VARSeeker empowers users to **interactively curate evidence** without requiring deep ACMG guideline expertise.
+Unlike other tools that provide static, one-time classifications, VARSeeker empowers users to **interactively curate evidence** without requiring deep ACMG guideline expertise. -->
+
+!!! success "Key Feature ⭐ "
+
+    Unlike other tools that provide static, one-time classifications, VARSeeker empowers users to **interactively curate evidence** without requiring deep ACMG guideline expertise.
 
 ### 6.1 Adjusting Evidence Strength
 
 **Quick Method:**
+
 - Use the **strength dropdown** next to each criterion name to change its strength (e.g., PP1 → PP1_Strong)
 
 ![](asserts/Document_image_18.png)
@@ -239,15 +321,18 @@ Unlike other tools that provide static, one-time classifications, VARSeeker empo
 ### 6.2 Detailed Evidence Editing
 
 **Advanced Method:**
+
 1. Click the **"Edit"** button on the criterion card
 2. Answer intuitive prompts based on your data (*publications* or *in house study*)
 3. VARSeeker automatically calculates the appropriate strength
+
 
 #### Example: PP1 (Co-segregation) Editing
 
 ![](asserts/Document_image_19.png)
 
 Instead of calculating LOD scores manually, simply provide:
+
 - ✅ Whether co-segregation was observed
 - ✅ Number of affected individuals in the family
 - ✅ Number of unaffected individuals in the family
@@ -269,11 +354,19 @@ VARSeeker automatically determines the evidence strength!
 
 ## 7. Case Management
 
-### ⭐ Key Feature
+<!-- ### ⭐ Key Feature
 
-VARSeeker transforms variant interpretation from a **one-time calculation** into a **continuous, longitudinal process** with automated re-evaluation alerts.
+VARSeeker transforms variant interpretation from a **one-time calculation** into a **continuous, longitudinal process** with automated re-evaluation alerts. -->
 
-> ⚠️ **Login Required**: Case management features require user authentication to protect patient privacy and data security.
+!!! success "Key Feature ⭐"
+
+    VARSeeker transforms variant interpretation from a **one-time calculation** into a **continuous, longitudinal process** with automated re-evaluation alerts.
+
+<!-- > ⚠️ **Login Required**: Case management features require user authentication to protect patient privacy and data security. -->
+
+!!! warning "Login Required"
+
+    Case management features require user authentication to protect patient privacy and data security.
 
 ### 7.1 Accessing Case Management
 
@@ -308,15 +401,24 @@ The **Alert column** is VARSeeker's intelligent monitoring system:
 ---
 ## 8. Community Knowledge Sharing
 
-### ⭐ Key Feature
+<!-- ### ⭐ Key Feature
 
-VARSeeker's **Community Sharing Library** enables collaborative variant interpretation, fostering transparent knowledge exchange.
+VARSeeker's **Community Sharing Library** enables collaborative variant interpretation, fostering transparent knowledge exchange. -->
+
+!!! success "Key Feature ⭐"
+
+    VARSeeker's **Community Sharing Library** enables collaborative variant interpretation, fostering transparent knowledge exchange.
 
 ### 8.1 Share Your Interpretation
 
 Sharing is managed through the **My Case** interface to ensure you have full control over what you share.
 
-> **⚠️ Login Required**: You must be logged in to share interpretations.
+<!-- > **⚠️ Login Required**: You must be logged in to share interpretations. -->
+
+!!! warning "Login Required"
+
+    You must be logged in to share interpretations.
+
 
 **Step 1**: Navigate to **My Case** → Select a case → View variant list
 
@@ -326,10 +428,16 @@ Sharing is managed through the **My Case** interface to ensure you have full con
 
 ![](asserts/Document_image_28.png)
 
-> **🔒 Privacy Assurance**:
+<!-- > **🔒 Privacy Assurance**:
 > - Only the variant interpretation is shared, **NOT** any patient/case information
 > - A randomly generated anonymous Case ID replaces your actual case identifier
-> - You can toggle sharing off at any time to remove from community library
+> - You can toggle sharing off at any time to remove from community library -->
+
+!!! info "Privacy Assurance 🔒"
+
+    - Only the variant interpretation is shared, **NOT** any patient/case information
+    - A randomly generated anonymous Case ID replaces your actual case identifier
+    - You can toggle sharing off at any time to remove from community library
 
 ### 8.2 Accessing the Community Library
 
@@ -341,11 +449,16 @@ Sharing is managed through the **My Case** interface to ensure you have full con
 
 ![](asserts/Document_image_30.png)
 
-> 🔒 **Important**: The "Case ID" column displays a **randomly generated identifier** by VARSeeker, used only to distinguish variants. It does **NOT** contain any actual patient case information.
+<!-- > 🔒 **Important**: The "Case ID" column displays a **randomly generated identifier** by VARSeeker, used only to distinguish variants. It does **NOT** contain any actual patient case information. -->
+
+!!! info "Privacy Assurance 🔒"
+
+    The "Case ID" column displays a **randomly generated identifier** by VARSeeker, used only to distinguish variants. It does **NOT** contain any actual patient case information.
 
 ### 8.3 Viewing Shared Interpretations
 
 Shared interpretation pages display:
+
 - User-curated evidence adjustments
 - Modified criteria with rationale
 - Community-contributed annotations
@@ -360,7 +473,9 @@ VARSeeker integrates with **MEDSeeker** to provide AI-assisted literature analys
 ### 9.1 Accessing Literature Search
 
 1. On the variant interpretation page, click the **"Articles"** tab (upper right of classification banner)
+
 2. Select search keywords:
+
    - Gene name
    - Transcript ID
    - Variant identifier
@@ -391,21 +506,27 @@ Click **"View"** to access analyzed report.
 ## 10. FAQ
 
 ### Q1: What genome builds are supported?
+
 **A**: VARSeeker supports both GRCh37/hg19 and GRCh38/hg38 coordinate systems.
 
 ### Q2: Do I need an account to use VARSeeker?
+
 **A**: Basic single variant interpretation is available without login. Case management and share your interpretation require registration.
 
 ### Q3: What if literature parsing fails?
+
 **A**: Possible reasons:
+
 - Article not open-access → Manually upload PDF
 - Article language not English → Currently unsupported
 - Network issue → Retry later
 
 ### Q4: What does the Alert feature do?
+
 **A**: Alerts notify you when database updates or guideline changes may affect a variant's classification, prompting re-interpretation.
 
 ### Q5: Is my patient data secure?
+
 **A**: Yes. Guest users receive unique token URLs. Logged-in users' data is protected by authentication. Shared interpretations use anonymized case IDs.
 
 ---
@@ -413,9 +534,9 @@ Click **"View"** to access analyzed report.
 
 ## Need Help?
 
-- 📧 Email: [maoxinxin126@126.com]
-- 📖 Documentation: [https://docs.varseeker.org]
-- 🐛 Report Issues: [https://github.com/varseeker/issues]
+- 📧 Email: [maoxinxin126@126.com]()
+- 📖 Documentation: [https://varseeker-doc.readthedocs.io/en/latest]()
+- 🐛 Report Issues: [maoxinxin126@126.com]()
 
 ---
 
