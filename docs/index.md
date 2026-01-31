@@ -264,7 +264,7 @@ The **Details Explorer** is positioned below the Overview Panel, containing deta
 
 !!! tip "Navigation Tip"
 
-    While you *can* scroll through the Evidence Explorer manually, **we recommend using the Overview Panel as your navigation hub**:
+    While you *can* scroll through the Details Explorer manually, **we recommend using the Overview Panel as your navigation hub**:
 
     - **Click "Gene"** in Basic Information → Auto-scrolls to Gene detail card
     - **Click "Variant Name"** → Auto-scrolls to Variant detail card
@@ -279,7 +279,7 @@ The **Details Explorer** is positioned below the Overview Panel, containing deta
 
 ### 5.3 Criterion Detail Card Structure
 
-Each criterion in the Evidence Explorer follows a consistent card structure:
+Each criterion in the Details Explorer follows a consistent card structure:
 
 ![](asserts/Document_image_17.png)
 
