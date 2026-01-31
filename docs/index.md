@@ -50,7 +50,7 @@ VARSeeker's homepage provides an intuitive interface for single variant interpre
 
 1. **Variant Input Box**: Enter your variant in any of the three supported formats
 2. **Genome Build Selector**: Choose between hg19 and hg38 coordinate systems
-3. **Phenotype Field**: Enter HPO terms or disease names for phenotype-aware interpretation
+3. **Phenotype Field**: Enter HPO terms for phenotype-aware interpretation
 
 ### 3.2 Phenotype-Based Prioritization
 
@@ -73,10 +73,10 @@ For large-scale variant screening in clinical or research settings, VARSeeker pr
 
 2. Fill in:
 
-   - **Task Description**: A brief description of your analysis
-   - **Case Information**: Optional case details
-   - **Phenotypes**: Enter HPO terms or disease names for phenotype-aware interpretation
-   - **Variants**: Enter multiple variants (one per line)
+    - **Task Description**: A brief description of your analysis
+    - **Case Information**: Optional case details
+    - **Phenotypes**: Enter HPO terms for phenotype-aware interpretation
+    - **Variants**: Enter multiple variants (one per line)
 
 3. Click **"OK"** to submit
 
@@ -95,9 +95,9 @@ For large-scale variant screening in clinical or research settings, VARSeeker pr
 
 2. Fill in:
 
-   - **Task Description**: A brief description of your analysis
-   - **Case Information**: Optional case details
-   - **Phenotypes**: Enter HPO terms or disease names for phenotype-aware interpretation
+    - **Task Description**: A brief description of your analysis
+    - **Case Information**: Optional case details
+    - **Phenotypes**: Enter HPO terms for phenotype-aware interpretation
 
 3. Upload your VCF file and PED format file (*optional*)
 
@@ -120,9 +120,9 @@ For end-to-end analysis from raw sequencing data:
 
 2. Fill in:
 
-   - **Task Description**: A brief description of your analysis
-   - **Case Information**: Optional case details
-   - **Phenotypes**: Enter HPO terms or disease names for phenotype-aware interpretation
+    - **Task Description**: A brief description of your analysis
+    - **Case Information**: Optional case details
+    - **Phenotypes**: Enter HPO terms for phenotype-aware interpretation
 
 3. Upload your FastQ files
 
@@ -246,7 +246,7 @@ Divided into two sub-panels:
 
 ### 5.2 Details Explorer (Blue Border Area)
 
-The **Details Explorer** is positioned below the Overview Panel, containing detailed information cards arranged vertically. Each card provides comprehensive details about a specific aspect of the interpretation.
+The **Details Explorer** is positioned below the **Overview Panel**, containing detailed information cards arranged vertically. Each card provides comprehensive details about a specific aspect of the interpretation.
 
 ![](asserts/Document_image_15.png)
 
